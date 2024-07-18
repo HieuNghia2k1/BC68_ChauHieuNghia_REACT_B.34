@@ -27,9 +27,14 @@ const Shoe = (props) => {
             <div>
               <img src={item.image} alt="" />
               <h3>{item.name}</h3>
-              <p>Đơn giá: {item.price}</p>
-              <p>Tổng số lượng: {item.quantity}</p>
-              <button className="bg-green-500 text-white py-2 px-5 rounded-md">
+              <p>Price: {item.price} $</p>
+              <p>Quantity: {item.quantity} items</p>
+              <button
+                onClick={() => {
+                  props.getDataShoe(item);
+                }}
+                className="bg-blue-500 text-white py-2 px-5 rounded-md"
+              >
                 Xem chi tiết{" "}
               </button>
             </div>
