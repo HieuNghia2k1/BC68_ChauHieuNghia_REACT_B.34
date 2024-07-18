@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Shoe from "./Shoe";
 
 const Props = () => {
-  let [id, setId] = useState(0);
   let arrShoes = [
     {
       id: 1,
@@ -146,10 +145,12 @@ const Props = () => {
     },
   ];
 
-  function capNhatId(Id) {
-    setId(id);
-  }
-  console.log(id);
+  let [shoe, setShoe] = useState(arrShoes[0]);
+
+  let getDataShoe = (giay) => {
+    setShoe(giay);
+  };
+  console.log(shoe);
 
   return (
     // <div className="container">
@@ -166,16 +167,17 @@ const Props = () => {
 
     <div>
       <h2 className="text-3xl">DANH SÁCH GIÀY</h2>
-      <Shoe arrSanPham={arrShoes} />
+      <Shoe getDataShoe={getDataShoe} arrSanPham={arrShoes} />
       <div className="flex">
         {/* img */}
         <div className="">
-          <img src="" alt="" />
+          <img src={shoe.image} alt="" />
         </div>
         {/* content */}
         <div>
-          {/* <p>Price</p>
-          <p>Quantity</p> */}
+          <h2>{shoe.name}</h2>
+          <p>Price {shoe.price}</p>
+          <p>Quantity {shoe.quantity}</p>
         </div>
       </div>
     </div>
