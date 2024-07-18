@@ -26,9 +26,12 @@ const Shoe = (props) => {
           return (
             <div>
               <img src={item.image} alt="" />
-              <h3>Tên sản phẩm {item.name}</h3>
+              <h3>{item.name}</h3>
               <p>Đơn giá: {item.price}</p>
               <p>Tổng số lượng: {item.quantity}</p>
+              <button className="bg-green-500 text-white py-2 px-5 rounded-md">
+                Xem chi tiết{" "}
+              </button>
             </div>
           );
         })}
