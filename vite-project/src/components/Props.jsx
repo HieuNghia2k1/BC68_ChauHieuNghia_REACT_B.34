@@ -174,8 +174,8 @@ const Props = () => {
         </div>
         {/* content */}
         <div>
-          <p>Price</p>
-          <p>Quantity</p>
+          {/* <p>Price</p>
+          <p>Quantity</p> */}
         </div>
       </div>
     </div>

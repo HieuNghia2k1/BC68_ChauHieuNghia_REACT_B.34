@@ -1,6 +1,6 @@
 import React from "react";
 
-const Shoe = ({ props }) => {
+const Shoe = (props) => {
   console.log(props);
 
   return (
@@ -20,16 +20,19 @@ const Shoe = ({ props }) => {
     //     Xem chi tiết
     //   </button>
     // </div>
-
-    <div className="grid grid-cols-3">
-      {props.arrSanPham.map((item, index) => {
-        return (
-          <div>
-            <img src={item.image} alt="" />
-            {/* 1h30 */}
-          </div>
-        );
-      })}
+    <div className="container">
+      <div className="grid grid-cols-3">
+        {props.arrSanPham.map((item, index) => {
+          return (
+            <div>
+              <img src={item.image} alt="" />
+              <h3>Tên sản phẩm {item.name}</h3>
+              <p>Đơn giá: {item.price}</p>
+              <p>Tổng số lượng: {item.quantity}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import Body from "./components/Body";
 import Detail from "./components/Detail";
-import Footer from "./components/Footer";
+
 import Header from "./components/Header";
 import Props from "./components/Props";
 import Shoe from "./components/Shoe";
@@ -33,9 +33,9 @@ function App() {
       <Header />
       <Body />
       <Detail />
-      <Footer />
-      <Props test={hoTen} />
-      <Shoe />
+
+      <Props />
+      {/* <Shoe /> */}
     </>
   );
 }
