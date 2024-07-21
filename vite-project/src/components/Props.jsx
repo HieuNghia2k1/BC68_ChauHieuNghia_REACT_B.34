@@ -154,7 +154,7 @@ const Props = () => {
 
   return (
     <div className="container">
-      <h2 className="text-5xl; text-center opacity-1 bg-green-300 container ">
+      <h2 className="text-5xl; text-center opacity-1 bg-green-300 container mb-4 ">
         Website Giày Shop Chicken-Boy
       </h2>
       <Shoe getDataShoe={getDataShoe} arrSanPham={arrShoes} />
@@ -168,7 +168,7 @@ const Props = () => {
           <img src={shoe.image} alt="" />
         </div>
         {/* content */}
-        <div className="">
+        <div className="mt-2">
           <h2>{shoe.name}</h2>
           <p className="w-100 font-medium">{shoe.description}</p>
           <p>Price: {shoe.price}</p>
