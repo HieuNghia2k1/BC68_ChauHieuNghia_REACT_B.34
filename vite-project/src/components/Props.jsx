@@ -153,21 +153,30 @@ const Props = () => {
   console.log(shoe);
 
   return (
-    <div>
-      <h2 className="text-5xl; text-center opacity-1 bg-green-300 container ">
+    <div className="container">
+      <h2 className="text-5xl; text-center opacity-1 bg-green-300 container mb-4 ">
         Website Giày Shop Chicken-Boy
       </h2>
       <Shoe getDataShoe={getDataShoe} arrSanPham={arrShoes} />
-      <div className="flex">
+      <h3 className="text-5xl; text-center opacity-1 bg-green-300 container m-10">
+        Thông tin chi tiết sản phẩm
+      </h3>
+
+      <div className="flex gap-10">
         {/* img */}
-        <div className="">
+        <div className="bg-slate-400 h-100">
           <img src={shoe.image} alt="" />
         </div>
         {/* content */}
-        <div>
+        <div className="mt-2">
           <h2>{shoe.name}</h2>
-          <p>Price {shoe.price}</p>
-          <p>Quantity {shoe.quantity}</p>
+          <p className="w-100 font-medium">{shoe.description}</p>
+          <p>Price: {shoe.price}</p>
+          <p>Quantity: {shoe.quantity}</p>
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </div>
