@@ -70,3 +70,62 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .add-to-cart {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  background-color: #87b106;
+
+  border-radius: 50%;
+  font-size: 18px;
+  top: 5px;
+  right: 0;
+  position: absolute;
+
+  i {
+    line-height: 2.5;
+  }
+} */
+
+.add-to-cart {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+  text-align: center;
+  background-color: #87b106;
+  border-radius: 50%;
+  font-size: 18px;
+  top: 5px;
+  right: 0;
+  /* display: inline; */
+}
+
+.add-to-cart:hover {
+  color: #fff;
+  background-color: #d26b31;
+}
+
+.product-item {
+  display: inline-block;
+
+  border: 1px solid #d7d0d0;
+  margin: 4 5px;
+  background-color: rgb(155, 155, 149);
+}
+
+.product-bottom {
+  background-color: #fff;
+  padding: 26px 10px 28px 10px;
+  border-top: 1px solid #616060;
+}
+.product-item:hover {
+  box-shadow: 0 5px 20px 0 rgba(195, 195, 195, 0.6);
+}

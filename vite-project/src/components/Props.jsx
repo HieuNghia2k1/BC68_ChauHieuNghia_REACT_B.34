@@ -5,7 +5,7 @@ const Props = () => {
   let arrShoes = [
     {
       id: 1,
-      name: "Adidas Prophere",
+      name: "Adidas Prophere Yellow Green",
       alias: "adidas-prophere",
       price: 350,
       description:
@@ -153,20 +153,10 @@ const Props = () => {
   console.log(shoe);
 
   return (
-    // <div className="container">
-    //   <h2>Danh sách giày của Shop</h2>
-    //   {/* grid grid-rows-4 */}
-    //   <div className="flex">
-    //     {/* Sử dụng vòng lặp để tạo item */}
-    //     {arrShoes.map((item, index) => {
-    //       console.log(item);
-    //       return <Shoe item={item} number={number} capNhatId={capNhatId} />;
-    //     })}
-    //   </div>
-    // </div>
-
     <div>
-      <h2 className="text-3xl">DANH SÁCH GIÀY</h2>
+      <h2 className="text-5xl; text-center opacity-1 bg-green-300 container ">
+        Website Giày Shop Chicken-Boy
+      </h2>
       <Shoe getDataShoe={getDataShoe} arrSanPham={arrShoes} />
       <div className="flex">
         {/* img */}
